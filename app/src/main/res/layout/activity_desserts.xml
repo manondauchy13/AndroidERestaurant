@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EntreesActivity">
+    tools:context=".DessertsActivity">
 
     <TextView
-        android:id="@+id/entreesTitre"
+        android:id="@+id/dessertsTitre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:fontFamily="cursive"
-        android:text="@string/nos_entr_es"
+        android:text="@string/nos_desserts"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/entreesLogo"
+        android:id="@+id/dessertsLogo"
         android:layout_width="82dp"
         android:layout_height="76dp"
         android:layout_marginTop="16dp"

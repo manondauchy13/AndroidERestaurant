@@ -1,10 +1,11 @@
 package fr.isen.dauchy.androiderestaurant
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.renderscript.ScriptGroup
+import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import fr.isen.dauchy.androiderestaurant.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -12,10 +13,37 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
+        binding.buttonEntrees.setOnClickListener {
+            val intent = Intent(this,EntreesActivity::class.java)
+            startActivity(intent)
+
+        }
+        binding.buttonPlats.setOnClickListener {
+            val intent = Intent(this,PlatsActivity::class.java)
+            startActivity(intent)
+
+        }
+        binding.buttonDesserts.setOnClickListener {
+            val intent = Intent(this,DessertsActivity::class.java)
+            startActivity(intent)
+
+        }
+    }
+    private val tag = "HomeActivity"
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i(tag, "Page détruite");
     }
 
+    override fun onStop() {
+        super.onStop()
+        Log.i(tag, "Quitte page acceuille ");
+    }
     fun displayEntreesMsg(view: View) {
         toastMsg("Entrées")
     }

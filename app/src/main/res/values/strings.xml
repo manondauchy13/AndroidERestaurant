@@ -6,4 +6,6 @@
     <string name="erestaurant">eRestaurant</string>
     <string name="logo">Logo</string>
     <string name="nos_entr_es">Nos Entrées</string>
+    <string name="nos_plats">Nos Plats</string>
+    <string name="nos_desserts">Nos Desserts</string>
 </resources>

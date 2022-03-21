@@ -7,7 +7,7 @@
     tools:context=".HomeActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/buttonEntrees"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="280dp"
@@ -19,7 +19,7 @@
         android:onClick="displayEntreesMsg"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/buttonPlats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
@@ -27,11 +27,11 @@
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEntrees"
         android:onClick="displayPlatsMsg"/>
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/buttonDesserts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
@@ -40,11 +40,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlats"
         android:onClick="displayDessertsMsg"/>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/homeRestaurant"
         style="@android:style/Widget.Material.Light.TextView"
         android:layout_width="203dp"
         android:layout_height="72dp"
@@ -62,23 +62,23 @@
         android:layout_width="409dp"
         android:layout_height="1dp"
         android:background="?android:attr/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDesserts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlats" />
 
     <View
         android:id="@+id/divider2"
         android:layout_width="409dp"
         android:layout_height="1dp"
         android:background="?android:attr/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPlats"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonEntrees" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/homeLogo"
         android:layout_width="159dp"
         android:layout_height="129dp"
         android:layout_marginTop="16dp"
