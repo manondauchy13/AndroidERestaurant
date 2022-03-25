@@ -19,6 +19,8 @@ internal class CategorieAdapter(val data: ArrayList<Item>, val clickListener: (I
         var itemTextView: TextView = view.findViewById(R.id.itemTextView)
         var itemLogo: ImageView = view.findViewById(R.id.itemLogo)
         var priceTextView: TextView = view.findViewById(R.id.priceTextView)
+
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -33,6 +35,9 @@ internal class CategorieAdapter(val data: ArrayList<Item>, val clickListener: (I
 
         val prix: String = item.prices[0].price + "€"
         holder.priceTextView.text = prix
+
+
+
 
         Picasso.get().load(item.images[0].ifEmpty { null })
             .placeholder(R.drawable.ic_launcher_foreground)

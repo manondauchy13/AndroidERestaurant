@@ -70,7 +70,8 @@ class CategorieActivity : AppCompatActivity() {
                     val strResp = response.toString()
                     val data = Gson().fromJson(strResp, DataResult::class.java)
                     val items = data.data.firstOrNull{it.name_fr == category}?.items ?: arrayListOf()
-                    binding.listeCategorie.adapter = CategorieAdapter(items) {
+                    binding.listeCategorie.adapter = CategorieAdapter(items)
+                    {
                         val intent = Intent(this, DetailActivity::class.java)
                         intent.putExtra(ITEM_KEY, it)
                         startActivity(intent)
