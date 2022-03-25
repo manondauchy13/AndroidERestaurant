@@ -8,4 +8,12 @@
     <string name="nos_entr_es">Nos Entrées</string>
     <string name="nos_plats">Nos Plats</string>
     <string name="nos_desserts">Nos Desserts</string>
+    <string name="imageplat">imagePlat</string>
+    <string-array name="entreesList">
+        <item>Croque aux truffes</item>
+        <item>Tomate Burrata</item>
+        <item>Roulés Prestige au caviar</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

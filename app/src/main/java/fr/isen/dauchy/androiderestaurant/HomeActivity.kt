@@ -1,48 +1,53 @@
 package fr.isen.dauchy.androiderestaurant
 
+import android.content.AbstractThreadedSyncAdapter
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+
 import fr.isen.dauchy.androiderestaurant.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
 
         binding.buttonEntrees.setOnClickListener {
-            val intent = Intent(this,EntreesActivity::class.java)
-            startActivity(intent)
-
+           goToCategorie(getString((R.string.entr_es)))
         }
         binding.buttonPlats.setOnClickListener {
-            val intent = Intent(this,PlatsActivity::class.java)
-            startActivity(intent)
-
+            goToCategorie(getString((R.string.plats)))
         }
         binding.buttonDesserts.setOnClickListener {
-            val intent = Intent(this,DessertsActivity::class.java)
-            startActivity(intent)
-
+            goToCategorie(getString((R.string.desserts)))
         }
+
+
+
     }
-    private val tag = "HomeActivity"
+
+    private  fun goToCategorie(categorie: String){
+        val intent = Intent(this,CategorieActivity::class.java)
+        intent.putExtra("categorie", categorie)
+        startActivity(intent)
+    }
+    private val TAG = "HomeActivity"
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.i(tag, "Page détruite");
+        Log.d(TAG, "Page détruite");
     }
 
     override fun onStop() {
         super.onStop()
-        Log.i(tag, "Quitte page acceuille ");
+        Log.d(TAG, "Quitte page acceuille ");
     }
     fun displayEntreesMsg(view: View) {
         toastMsg("Entrées")

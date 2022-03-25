@@ -4,31 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlatsActivity">
+    tools:context=".CategorieActivity">
 
     <TextView
-        android:id="@+id/platsTitre"
+        android:id="@+id/titreCategorie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:fontFamily="cursive"
-        android:text="@string/nos_plats"
+
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/platsLogo"
-        android:layout_width="82dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/logo"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listeCategorie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kisspng_restaurant_logo_lunch_5ad16063a8c914_7814398615236711396914" />
-
+        app:layout_constraintTop_toBottomOf="@+id/titreCategorie" />
 </androidx.constraintlayout.widget.ConstraintLayout>

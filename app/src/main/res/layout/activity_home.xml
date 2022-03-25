@@ -11,43 +11,46 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="280dp"
+        android:onClick="displayEntreesMsg"
         android:text="@string/entr_es"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="displayEntreesMsg"/>
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/buttonPlats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
+        android:onClick="displayPlatsMsg"
         android:text="@string/plats"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonEntrees"
-        android:onClick="displayPlatsMsg"/>
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/buttonDesserts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
+        android:onClick="displayDessertsMsg"
         android:text="@string/desserts"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonPlats"
-        android:onClick="displayDessertsMsg"/>
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/homeRestaurant"
         style="@android:style/Widget.Material.Light.TextView"
-        android:layout_width="203dp"
-        android:layout_height="72dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
         android:fontFamily="@font/aguafina_script"
         android:text="@string/erestaurant"
@@ -59,7 +62,7 @@
 
     <View
         android:id="@+id/divider"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="1dp"
         android:background="?android:attr/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/buttonDesserts"
@@ -69,7 +72,7 @@
 
     <View
         android:id="@+id/divider2"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="1dp"
         android:background="?android:attr/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/buttonPlats"
@@ -79,7 +82,7 @@
 
     <ImageView
         android:id="@+id/homeLogo"
-        android:layout_width="159dp"
+        android:layout_width="0dp"
         android:layout_height="129dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/logo"
