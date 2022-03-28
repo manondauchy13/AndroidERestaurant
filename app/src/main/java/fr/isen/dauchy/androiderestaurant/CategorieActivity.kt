@@ -4,7 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
@@ -93,4 +97,26 @@ class CategorieActivity : AppCompatActivity() {
             super.onDestroy()
             Log.d(TAG, "Page des catégories détruite")
         }
-}
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.icon, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        R.id.bluetooth -> {
+            Toast.makeText(this@CategorieActivity, "Bluetooth", Toast.LENGTH_SHORT).show()
+            true
+        }
+
+        R.id.panier -> {
+            Toast.makeText(this@CategorieActivity, "Panier", Toast.LENGTH_SHORT).show()
+            true
+        }
+
+        else -> {
+            super.onOptionsItemSelected(item)
+        }
+    }
+
+    }

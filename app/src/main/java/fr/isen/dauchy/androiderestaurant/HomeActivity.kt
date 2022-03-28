@@ -4,9 +4,13 @@ import android.content.AbstractThreadedSyncAdapter
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+
 
 import fr.isen.dauchy.androiderestaurant.databinding.ActivityHomeBinding
 
@@ -65,5 +69,25 @@ class HomeActivity : AppCompatActivity() {
     fun displayDessertsMsg(view: View) {
         toastMsg("Desserts")
     }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.icon, menu)
+        return true
+    }
 
-}
+    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        R.id.bluetooth -> {
+            Toast.makeText(this@HomeActivity, "Bluetooth", Toast.LENGTH_SHORT).show()
+            true
+        }
+
+        R.id.panier -> {
+            Toast.makeText(this@HomeActivity, "Panier", Toast.LENGTH_SHORT).show()
+            true
+        }
+
+        else -> {
+            super.onOptionsItemSelected(item)
+        }
+    }
+    }

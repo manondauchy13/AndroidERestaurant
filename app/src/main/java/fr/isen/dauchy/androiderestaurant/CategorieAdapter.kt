@@ -52,4 +52,5 @@ internal class CategorieAdapter(val data: ArrayList<Item>, val clickListener: (I
         return data.size
     }
 
+
 }

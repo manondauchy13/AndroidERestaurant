@@ -3,15 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1835" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1835" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/drawable/minus_svgrepo_com.xml" value="0.1835" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/font/aguafina_script.xml" value="0.3398148148148148" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_categorie.xml" value="0.33" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_desserts.xml" value="0.33695652173913043" />
-        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_detail.xml" value="0.23956723338485317" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_detail.xml" value="0.33" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_entrees.xml" value="0.33" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_icon.xml" value="0.1762917933130699" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_plats.xml" value="0.33695652173913043" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/fragment_picture.xml" value="0.3292572463768116" />
-        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/item.xml" value="0.33695652173913043" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/icon.xml" value="0.1859375" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/item.xml" value="0.25" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/menu/icon.xml" value="0.1859375" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/menu/topicon.xml" value="0.1455078125" />
       </map>
     </option>
   </component>
