@@ -1,6 +1,5 @@
 package fr.isen.dauchy.androiderestaurant
 
-import android.content.AbstractThreadedSyncAdapter
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +9,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import fr.isen.dauchy.androiderestaurant.ble.BLEScanActivity
 
 
 import fr.isen.dauchy.androiderestaurant.databinding.ActivityHomeBinding
@@ -33,6 +33,10 @@ class HomeActivity : AppCompatActivity() {
             goToCategorie(getString((R.string.desserts)))
         }
 
+        binding.buttonBluetooth.setOnClickListener {
+            val intent = Intent(this, BLEScanActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }

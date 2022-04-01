@@ -10,11 +10,12 @@
         android:id="@+id/buttonEntrees"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="240dp"
         android:onClick="displayEntreesMsg"
         android:text="@string/entr_es"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
@@ -77,8 +78,10 @@
         android:background="?android:attr/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/buttonPlats"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonEntrees" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonEntrees"
+        app:layout_constraintVertical_bias="0.727" />
 
     <ImageView
         android:id="@+id/homeLogo"
@@ -90,5 +93,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/buttonBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Bluetooth"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDesserts" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBluetooth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDesserts" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
