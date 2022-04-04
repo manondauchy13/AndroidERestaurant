@@ -24,4 +24,8 @@
     <string name="ble_scan_device_error">BLE non disponible sur cet appareil</string>
     <string name="ble_device_disconnected">Statut : déconnecté</string>
     <string name="ble_device_connected">Statut : connecté</string>
+    <string name="ble_device_characteristic_read" />
+    <string name="ble_characteristic_read">LECTURE</string>
+    <string name="ble_characterisitc_write">ECRITURE</string>
+    <string name="image">image</string>
 </resources>
