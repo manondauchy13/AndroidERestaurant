@@ -76,22 +76,7 @@ class HomeActivity : AppCompatActivity() {
         return true
     }
 
-   /* override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
-        R.id.bluetooth -> {
-            Toast.makeText(this@HomeActivity, "Bluetooth", Toast.LENGTH_SHORT).show()
-            true
 
-        }
-
-        R.id.panier -> {
-            Toast.makeText(this@HomeActivity, "Panier", Toast.LENGTH_SHORT).show()
-            true
-        }
-
-        else -> {
-            super.onOptionsItemSelected(item)
-        }
-    }*/
    override fun onOptionsItemSelected(item: MenuItem): Boolean {
        // Handle item selection
        return when (item.itemId) {
