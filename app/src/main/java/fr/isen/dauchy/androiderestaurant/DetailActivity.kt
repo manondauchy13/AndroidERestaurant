@@ -66,7 +66,7 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
-        inflater.inflate(R.menu.icon, menu)
+        inflater.inflate(R.menu.menu, menu)
         return true
     }
 

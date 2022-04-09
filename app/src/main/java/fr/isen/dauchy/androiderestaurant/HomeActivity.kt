@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import fr.isen.dauchy.androiderestaurant.ble.BLEScanActivity
+import fr.isen.dauchy.androiderestaurant.cart.ShoppingCartActivity
 
 
 import fr.isen.dauchy.androiderestaurant.databinding.ActivityHomeBinding
@@ -33,10 +34,6 @@ class HomeActivity : AppCompatActivity() {
             goToCategorie(getString((R.string.desserts)))
         }
 
-        binding.buttonBluetooth.setOnClickListener {
-            val intent = Intent(this, BLEScanActivity::class.java)
-            startActivity(intent)
-        }
 
 
     }
@@ -75,14 +72,15 @@ class HomeActivity : AppCompatActivity() {
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
-        inflater.inflate(R.menu.icon, menu)
+        inflater.inflate(R.menu.menu, menu)
         return true
     }
 
-    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+   /* override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
         R.id.bluetooth -> {
             Toast.makeText(this@HomeActivity, "Bluetooth", Toast.LENGTH_SHORT).show()
             true
+
         }
 
         R.id.panier -> {
@@ -93,5 +91,29 @@ class HomeActivity : AppCompatActivity() {
         else -> {
             super.onOptionsItemSelected(item)
         }
+    }*/
+   override fun onOptionsItemSelected(item: MenuItem): Boolean {
+       // Handle item selection
+       return when (item.itemId) {
+           R.id.bluetooth -> {
+               bluetooth()
+               true
+           }
+           R.id.panier -> {
+               panier()
+               true
+           }
+           else -> super.onOptionsItemSelected(item)
+       }
+   }
+
+    private fun panier() {
+        val intent = Intent(this, ShoppingCartActivity::class.java)
+        startActivity(intent)
     }
+
+    private fun bluetooth() {
+        val intent = Intent(this, BLEScanActivity::class.java)
+        startActivity(intent)
     }
+}

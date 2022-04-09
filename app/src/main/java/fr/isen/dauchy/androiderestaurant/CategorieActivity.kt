@@ -7,7 +7,6 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
-import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,9 +16,7 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import fr.isen.dauchy.androiderestaurant.databinding.ActivityCategorieBinding
-import fr.isen.dauchy.androiderestaurant.model.Category
 import fr.isen.dauchy.androiderestaurant.model.DataResult
-import fr.isen.dauchy.androiderestaurant.model.Item
 import org.json.JSONObject
 
 class CategorieActivity : AppCompatActivity() {
@@ -99,7 +96,7 @@ class CategorieActivity : AppCompatActivity() {
         }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
-        inflater.inflate(R.menu.icon, menu)
+        inflater.inflate(R.menu.menu, menu)
         return true
     }
 

@@ -1,0 +1,8 @@
+package fr.isen.dauchy.androiderestaurant.cart
+
+import fr.isen.dauchy.androiderestaurant.cart.Item2
+import java.io.Serializable
+
+    class ShoppingCartList (var panier :ArrayList<Item2>) : Serializable
+
+

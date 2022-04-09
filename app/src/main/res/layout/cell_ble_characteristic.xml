@@ -25,6 +25,25 @@
         app:layout_constraintTop_toBottomOf="@+id/characteristicName"
         tools:text="UUID : 12345678" />
 
+    <TextView
+        android:id="@+id/characteristicProperties"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characteristicUUID"
+        tools:text="Propriété : Lire" />
+
+    <TextView
+        android:id="@+id/characteristicValue"
+        android:layout_width="27dp"
+        android:layout_height="28dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/characteristicProperties"
+        app:layout_constraintStart_toStartOf="@+id/characteristicProperties"
+        tools:text="Valeur : 4" />
+
     <Button
         android:id="@+id/readAction"
         android:layout_width="wrap_content"
@@ -43,4 +62,5 @@
         android:text="@string/ble_characterisitc_write"
         app:layout_constraintStart_toEndOf="@+id/readAction"
         app:layout_constraintTop_toTopOf="@+id/readAction" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

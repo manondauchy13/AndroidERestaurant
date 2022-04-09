@@ -28,4 +28,11 @@
     <string name="ble_characteristic_read">LECTURE</string>
     <string name="ble_characterisitc_write">ECRITURE</string>
     <string name="image">image</string>
+    <string name="total">Total</string>
+    <string name="checkout">Checkout</string>
+    <string name="ble_device_status_connecting">Statut : connexion</string>
+    <string name="ble_device_status_disconnecting">statut : déconnexion</string>
+    <string name="ble_device_write_characteristic_title">ecrire la valeur</string>
+    <string name="ble_device_write_characteristic_confirm">confirmer</string>
+    <string name="ble_device_write_characteristic_cancel">annuler</string>
 </resources>
