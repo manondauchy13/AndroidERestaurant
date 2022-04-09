@@ -6,7 +6,10 @@
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1835" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/drawable/ble_circle.xml" value="0.35" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/drawable/devi.xml" value="0.3635" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.195" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1835" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/drawable/ic_pause.xml" value="0.195" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/drawable/ic_play.xml" value="0.195" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/drawable/minus_svgrepo_com.xml" value="0.1835" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/font/aguafina_script.xml" value="0.3398148148148148" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_blescan.xml" value="0.5" />
@@ -17,9 +20,11 @@
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_entrees.xml" value="0.33" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_icon.xml" value="0.1762917933130699" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_item_view.xml" value="0.1828125" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_plats.xml" value="0.33695652173913043" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_shopping_cart.xml" value="0.171875" />
+        <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/activity_shopping_cart_adapter.xml" value="0.16875" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/cart_list_item.xml" value="0.171875" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/cell_ble_characteristic.xml" value="0.3625" />
         <entry key="..\:/Ce PC/Documents/AndroidERestaurant/app/src/main/res/layout/cell_ble_service.xml" value="0.3567708333333333" />

@@ -110,10 +110,16 @@ class HomeActivity : AppCompatActivity() {
     private fun panier() {
         val intent = Intent(this, ShoppingCartActivity::class.java)
         startActivity(intent)
+        Toast.makeText(this@HomeActivity, "panier", Toast.LENGTH_SHORT).show()
+        true
+
     }
 
     private fun bluetooth() {
         val intent = Intent(this, BLEScanActivity::class.java)
         startActivity(intent)
+        Toast.makeText(this@HomeActivity, "Bluetooth", Toast.LENGTH_SHORT).show()
+        true
+
     }
 }

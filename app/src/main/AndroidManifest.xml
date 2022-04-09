@@ -18,6 +18,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidERestaurant"
         android:usesCleartextTraffic="true">
+
+
         <activity
             android:name=".cart.ShoppingCartActivity"
             android:exported="false" />

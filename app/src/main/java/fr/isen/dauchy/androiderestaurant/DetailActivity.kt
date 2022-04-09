@@ -16,7 +16,7 @@ class DetailActivity : AppCompatActivity() {
     lateinit var quantity: TextView
     lateinit var boutonPlus: Button
     lateinit var boutonMoins: Button
-
+    private lateinit var item: Item
     var countInt: Float = 0F
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -84,5 +84,7 @@ class DetailActivity : AppCompatActivity() {
         else -> {
             super.onOptionsItemSelected(item)
         }
+
+
     }
     }
