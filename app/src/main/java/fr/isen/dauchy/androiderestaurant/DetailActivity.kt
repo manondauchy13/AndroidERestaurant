@@ -1,5 +1,6 @@
 package fr.isen.dauchy.androiderestaurant
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -8,6 +9,10 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.google.android.material.snackbar.Snackbar
+import fr.isen.dauchy.androiderestaurant.ble.BLEScanActivity
+import fr.isen.dauchy.androiderestaurant.cart.Cart
+import fr.isen.dauchy.androiderestaurant.cart.ShoppingCartActivity
 import fr.isen.dauchy.androiderestaurant.databinding.ActivityDetailBinding
 import fr.isen.dauchy.androiderestaurant.model.Item
 
@@ -55,7 +60,16 @@ class DetailActivity : AppCompatActivity() {
                 doTotal(item, countInt)
             }
         }
-
+        /*binding.total.setOnClickListener {
+            item?.let { item ->
+                this.cacheDir.absolutePath
+                val cart = Cart.getCart(this)
+                cart.addItem(item, countInt.toInt())
+                cart.save(this)
+                Snackbar.make(binding.total, R.string.itemAdded, Snackbar.LENGTH_LONG).show()
+                invalidateOptionsMenu()
+            }
+        }*/
     }
     private fun doTotal(item: Item, selected: Float) {
         val ttlPrix: String = item.prices[0].price
@@ -70,21 +84,36 @@ class DetailActivity : AppCompatActivity() {
         return true
     }
 
-    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
-        R.id.bluetooth -> {
-            Toast.makeText(this@DetailActivity, "Bluetooth", Toast.LENGTH_SHORT).show()
-            true
-        }
 
-        R.id.panier -> {
-            Toast.makeText(this@DetailActivity, "Panier", Toast.LENGTH_SHORT).show()
-            true
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle item selection
+        return when (item.itemId) {
+            R.id.bluetooth -> {
+                bluetooth()
+                true
+            }
+            R.id.panier -> {
+                panier()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
+    }
 
-        else -> {
-            super.onOptionsItemSelected(item)
-        }
-
+    private fun panier() {
+        val intent = Intent(this, ShoppingCartActivity::class.java)
+        startActivity(intent)
+        Toast.makeText(this@DetailActivity, "panier", Toast.LENGTH_SHORT).show()
+        true
 
     }
+
+    private fun bluetooth() {
+        val intent = Intent(this, BLEScanActivity::class.java)
+        startActivity(intent)
+        Toast.makeText(this@DetailActivity, "Bluetooth", Toast.LENGTH_SHORT).show()
+        true
+
+    }
+
     }

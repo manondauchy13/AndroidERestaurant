@@ -15,6 +15,8 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
+import fr.isen.dauchy.androiderestaurant.ble.BLEScanActivity
+import fr.isen.dauchy.androiderestaurant.cart.ShoppingCartActivity
 import fr.isen.dauchy.androiderestaurant.databinding.ActivityCategorieBinding
 import fr.isen.dauchy.androiderestaurant.model.DataResult
 import org.json.JSONObject
@@ -100,20 +102,36 @@ class CategorieActivity : AppCompatActivity() {
         return true
     }
 
-    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
-        R.id.bluetooth -> {
-            Toast.makeText(this@CategorieActivity, "Bluetooth", Toast.LENGTH_SHORT).show()
-            true
-        }
 
-        R.id.panier -> {
-            Toast.makeText(this@CategorieActivity, "Panier", Toast.LENGTH_SHORT).show()
-            true
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle item selection
+        return when (item.itemId) {
+            R.id.bluetooth -> {
+                bluetooth()
+                true
+            }
+            R.id.panier -> {
+                panier()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
+    }
 
-        else -> {
-            super.onOptionsItemSelected(item)
-        }
+    private fun panier() {
+        val intent = Intent(this, ShoppingCartActivity::class.java)
+        startActivity(intent)
+        Toast.makeText(this@CategorieActivity, "panier", Toast.LENGTH_SHORT).show()
+        true
+
+    }
+
+    private fun bluetooth() {
+        val intent = Intent(this, BLEScanActivity::class.java)
+        startActivity(intent)
+        Toast.makeText(this@CategorieActivity, "Bluetooth", Toast.LENGTH_SHORT).show()
+        true
+
     }
 
     }

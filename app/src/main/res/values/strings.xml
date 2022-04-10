@@ -36,4 +36,6 @@
     <string name="ble_device_write_characteristic_confirm">confirmer</string>
     <string name="ble_device_write_characteristic_cancel">annuler</string>
     <string name="toast">toast</string>
+    <string name="quantity" />
+    <string name="itemAdded" />
 </resources>
